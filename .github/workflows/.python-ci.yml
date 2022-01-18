@@ -23,4 +23,5 @@ jobs:
         pipenv install nose pylint --dev
     - name: Test with nose
       run: |
+        pipenv run pip install requests
         pipenv run nosetests
