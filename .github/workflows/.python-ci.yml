@@ -18,8 +18,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install requests
         pip install pipenv
+        pip install requests
         pipenv install --dev
         pipenv install nose pylint --dev
     - name: Test with nose
